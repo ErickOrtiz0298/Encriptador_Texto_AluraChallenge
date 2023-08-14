@@ -1,0 +1,28 @@
+body{
+    background-color: #F3F5FC;
+    margin:0;
+}
+
+.container{
+    width: 100%;
+    margin:auto;
+    display: flex ;
+
+}
+
+.container-izquierdo{
+    margin: 5px;
+    border: 5px;
+    padding: 5px;
+    
+
+}
+.container-izquierdo{
+    margin: 5px;
+    border: 5px;
+    padding: 5px;
+}
+
+#botonCopiar{
+    display: none;
+}
