@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="style.css">
 
     <script type="text/javascript" src="index.js"></script>
 
     <title>Encriptador</title>
 </head>
+
 <body>
-    <input type="text" id="textoEncriptado">
-    <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
-    <button type="button" id="botonEncriptado">Encriptar</button>
-    <button type="button" id="botonDesencriptado">Desencriptar</button>
-    <button type="button" id="botonCopiar">Copiar</button>
+    <header>
+        <img src="/imagenes/Logo.png" alt="Logo alura">
+    </header>
+    <main>
+
+        <section class="seccion_1">
+            <textarea class="textarea" placeholder="Escribe tu texto aqui"></textarea>
+                <div class="contenedor_botones">
+                    <input type="button"class="boton_encriptar" value="Encriptar"></input>
+                    <input type="button"class="boton_desencriptar" value="Desencriptar"></input>
+                </div>
+        </section>
+        <section class="seccion_2">
+            <div class="contenedor_imagen">
+                <img src="/imagenes/Muñeco.png" alt="Muñeco">
+            </div>
+            <div class="contenedor_subtitulo">
+                <h3>No se encontró ningun mensaje</h3>
+            </div>
+            <div class="contenedor_parrafo">
+                <p>Escribe el texto que sea encriptar o desencriptar</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Reto 1 Oracle Next Generation By Erick Ortiz
+    </footer>
+
 </body>
 <script>
     var btn = document.querySelector("#botonEncriptado");
-    btn.onclick =  encriptar;
+    btn.onclick = encriptar;
 
     var btn2 = document.querySelector("#botonDesencriptado");
-    btn2.onclick = desencriptar;  
+    btn2.onclick = desencriptar;
 
     var btn3 = document.querySelector("#botonCopiar");
-    btn3.onclick =  copiar;  
+    btn3.onclick = copiar;  
 </script>
+
 </html>
