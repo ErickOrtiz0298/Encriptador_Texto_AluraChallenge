@@ -20,21 +20,30 @@
     <main>
 
         <section class="seccion_1">
-            <textarea class="textarea" placeholder="Escribe tu texto aqui"></textarea>
+            <textarea class="textarea" placeholder="Escribe tu texto aqui"id="textoEncriptado"></textarea>
                 <div class="contenedor_botones">
                     <input type="button"class="boton_encriptar" value="Encriptar"></input>
                     <input type="button"class="boton_desencriptar" value="Desencriptar"></input>
                 </div>
         </section>
         <section class="seccion_2">
-            <div class="contenedor_imagen">
-                <img src="/imagenes/Muñeco.png" alt="Muñeco">
+            <div class="ocultar" id="ocultar">
+                <div class="contenedor_imagen" id="imagen_munieco">
+                    <img src="/imagenes/Muñeco.png" alt="Muñeco">
+                </div>
+                <div class="contenedor_subtitulo"id="contenedor_subtitulo">
+                    <h3>No se encontró ningun mensaje</h3>
+                </div>
+                <div class="contenedor_parrafo" id="contenedor_parrafo">
+                    <p>Escribe el texto que sea encriptar o desencriptar</p>
+                </div>    
             </div>
-            <div class="contenedor_subtitulo">
-                <h3>No se encontró ningun mensaje</h3>
+            <div class="textoDesencriptado" >
+                <textarea class="textarea" id="textoDesencriptado"></textarea>
             </div>
-            <div class="contenedor_parrafo">
-                <p>Escribe el texto que sea encriptar o desencriptar</p>
+
+            <div class="contenedor_botones">
+                <input type="button"class="boton_copiar" id="boton_copiar" value="Copiar"></input>
             </div>
         </section>
 
@@ -46,13 +55,13 @@
 
 </body>
 <script>
-    var btn = document.querySelector("#botonEncriptado");
+    var btn = document.querySelector(".boton_encriptar");
     btn.onclick = encriptar;
 
-    var btn2 = document.querySelector("#botonDesencriptado");
+    var btn2 = document.querySelector(".boton_desencriptar");
     btn2.onclick = desencriptar;
 
-    var btn3 = document.querySelector("#botonCopiar");
+    var btn3 = document.querySelector(".boton_copiar");
     btn3.onclick = copiar;  
 </script>
 

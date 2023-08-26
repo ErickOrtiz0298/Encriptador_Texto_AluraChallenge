@@ -10,11 +10,17 @@ function encriptar(){
     var textoEncriptado = textoEncriptado.replace(/a/img,"ai");
     var textoEncriptado = textoEncriptado.replace(/u/img,"ufat");
 
+    console.log(textoEncriptado);
+
     document.getElementById("textoDesencriptado").innerHTML = textoEncriptado;
 
-    document.getElementById("botonCopiar").style.display = "show";
+    document.getElementById("ocultar").style.display="none";
 
-    document.getElementById("botonCopiar").style.display = "inherit";
+    document.getElementById("textoDesencriptado").style.display="show";
+    document.getElementById("boton_copiar").style.display = "show";
+    
+    document.getElementById("textoDesencriptado").style.display="inherit";
+    document.getElementById("boton_copiar").style.display = "inherit";
 
 }
 

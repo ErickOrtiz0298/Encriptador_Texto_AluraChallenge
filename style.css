@@ -108,10 +108,27 @@ section{
     cursor: pointer;
 }
 
+.boton_copiar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: #0A3871;
+    cursor: pointer;
+}
+
 footer{
     font-size: 25px;
     text-align: center;
     color: black;
     padding-top: 20px;
     box-sizing:border-box ;
+}
+
+#boton_copiar{
+    display: none;
+}
+
+#textoDesencriptado{
+    display: none;
 }
